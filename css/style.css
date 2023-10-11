@@ -1,17 +1,21 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: #0e0e0e;
 }
 
 header {
-  background-color: #0e0e0e;
+  background-color: #1b1b1b;
+}
+
+header #navbar {
   padding: 15px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 header a {
@@ -42,7 +46,46 @@ header #nav a {
 }
 
 main #home {
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   max-width: 1200px;
+}
+
+main #home .apresentacao {
+  padding: 15px;
+}
+
+main #home .apresentacao img {
+  width: 350px;
+  padding: 0 0 20px 0;
+}
+
+main #home .apresentacao p {
+  padding-right: 40px;
+  margin-bottom: 100px;
+}
+main #home .apresentacao a {
+  padding: 20px 60px;
+  background: #ff842b;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+main #home .apresentacao-img img {
+  width: 600px;
+  margin: 80px 0 0 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  main #home .apresentacao-img img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -53,7 +96,7 @@ main #home {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #0e0e0e;
+    background-color: #1b1b1b;
     text-align: center;
   }
 
