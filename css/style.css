@@ -108,4 +108,14 @@ main #home .apresentacao-img img {
   header #menu-icon {
     display: block;
   }
+
+  main #home .apresentacao img {
+    width: 230px;
+    padding: 0 0 20px 0;
+  }
+
+  main #home .apresentacao p {
+    padding-right: 5px;
+    margin-bottom: 50px;
+  }
 }
