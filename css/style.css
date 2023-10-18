@@ -25,7 +25,7 @@ header a {
 }
 
 header img#logo {
-  max-width: 150px;
+  max-width: 250px;
 }
 
 header #menu-icon {
@@ -46,7 +46,7 @@ header #nav a {
 }
 
 main #home {
-  padding: 15px;
+  padding: 15px 0 100px 0;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -82,8 +82,95 @@ main #home .apresentacao-img img {
   margin: 80px 0 0 70px;
 }
 
+section {
+  color: white;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section .icones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+section#sobre {
+  padding-bottom: 200px;
+}
+
+section .icones .icone {
+  padding: 10px;
+}
+
+section .icones .icone p {
+  letter-spacing: px;
+}
+
+section .linha img {
+  max-width: 1200px;
+}
+
+section#sobreMob {
+  display: none;
+}
+
+section#info {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 4px;
+  background-color: #ff842b;
+}
+
+section#info .container-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+section#info .container-info .frase {
+  padding-left: 50px;
+}
+
+section#info .container-info .frase p {
+  font-size: 22px;
+}
+
+section#info .container-info .bg-img {
+  background-image: url("/img/entregador-frase.svg");
+}
+
 @media screen and (max-width: 1200px) {
+  main #home {
+    padding: 20px;
+  }
+
   main #home .apresentacao-img img {
+    display: none;
+    padding: 20px;
+  }
+
+  section#sobre {
+    display: none;
+  }
+  section#sobreMob {
+    display: flex;
+  }
+
+  section .icones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+    text-align: center;
+  }
+
+  section .icones img {
+    max-width: 100%;
+  }
+
+  section .linha img {
     display: none;
   }
 }
@@ -117,5 +204,16 @@ main #home .apresentacao-img img {
   main #home .apresentacao p {
     padding-right: 5px;
     margin-bottom: 50px;
+  }
+  section#info .container-info {
+    display: flex;
+    padding: 20px;
+  }
+
+  section#info .container-info .frase {
+    padding: 10px;
+  }
+  section#info .container-info img {
+    display: none;
   }
 }
