@@ -261,7 +261,9 @@ footer#footer div .social .divMob {
   section .linha img {
     display: none;
   }
-
+  section#cadastro {
+    padding: 60px;
+  }
   section#cadastro div div div img {
     width: 150%;
   }
@@ -344,5 +346,8 @@ footer#footer div .social .divMob {
 
   section#cadastro div div .telaImg {
     display: none;
+  }
+  section#cadastro div div .form form {
+    width: 300%;
   }
 }
