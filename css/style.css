@@ -130,21 +130,23 @@ section#info .container-info {
   justify-items: center;
 }
 
-section#info .container-info .frase {
-  padding-left: 50px;
-}
-
 section#info .container-info .frase p {
   font-size: 22px;
+  padding: 10px 10px 10px 80px;
+  align-self: end;
 }
 
 section#info .container-info .bg-img {
-  background-image: url("/img/entregador-frase.svg");
+  display: block;
+  height: 100%;
+  /* width: 100%; */
+  object-fit: cover;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1200px) {
   main #home {
-    padding: 20px;
+    padding: 40px 40px 80px 40px;
   }
 
   main #home .apresentacao-img img {
@@ -196,6 +198,10 @@ section#info .container-info .bg-img {
     display: block;
   }
 
+  main #home {
+    padding-bottom: 300px;
+  }
+
   main #home .apresentacao img {
     width: 230px;
     padding: 0 0 20px 0;
@@ -205,15 +211,21 @@ section#info .container-info .bg-img {
     padding-right: 5px;
     margin-bottom: 50px;
   }
+
+  section#sobreMob {
+    padding-bottom: 300px;
+  }
+
   section#info .container-info {
     display: flex;
     padding: 20px;
   }
 
-  section#info .container-info .frase {
-    padding: 10px;
+  section#info .container-info .frase p {
+    padding: 10px 10px 10px 10px;
   }
-  section#info .container-info img {
+
+  section#info .container-info .bg-img {
     display: none;
   }
 }
