@@ -350,6 +350,9 @@ footer#footer div .social .divMob {
   section#cadastro div div .form form {
     width: 300%;
   }
+  footer div .contato {
+    margin: 0;
+  }
   footer div .contato hr {
     margin-top: 25px;
     width: 100%;
